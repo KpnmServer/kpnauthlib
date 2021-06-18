@@ -1,0 +1,35 @@
+name: KpnAuthLib
+version: 1.0.0
+api-version: 1.16
+author: zyxgad
+main: com.github.zyxgad.authlib.AuthLib
+
+commands:
+  login:
+    description: User login command
+    usage: 'Player: /<command> <password>'
+    permission: kpnauthlib.default
+    permission-message: You don't have <permission>
+  register:
+    description: User register command
+    aliases: reg
+    usage: 'Player: /<command> <password>'
+    permission: kpnauthlib.default
+    permission-message: You don't have <permission>
+  changepassword:
+    description: Change your password
+    aliases: chpwd
+    usage: 'Player: /<command> <oldpassword> <newpassword>'
+    permission: kpnauthlib.default
+    permission-message: You don't have <permission>
+  authlib:
+    description: Authlib command
+    usage: '/<command> help'
+    permission: kpnauthlib.oper
+    permission-message: You don't have <permission>
+
+permissions:
+  kpnauthlib.default:
+    default: true
+  kpnauthlib.oper:
+    default: op

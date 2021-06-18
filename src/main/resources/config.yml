@@ -1,0 +1,4 @@
+
+max_wait_tick: 10
+max_try_num: 3
+whitelist: true
