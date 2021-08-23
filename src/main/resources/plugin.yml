@@ -12,7 +12,6 @@ commands:
     permission-message: You don't have <permission>
   register:
     description: User register command
-    aliases: reg
     usage: 'Player: /<command> <password>'
     permission: kpnauthlib.default
     permission-message: You don't have <permission>

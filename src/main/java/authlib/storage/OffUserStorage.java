@@ -24,7 +24,7 @@ import com.github.zyxgad.authlib.util.ErrorStackGetter;
 
 
 public final class OffUserStorage{
-	public static final OffUserStorage INSTANCE = new OffUserStorage();
+	private static final OffUserStorage INSTANCE = new OffUserStorage();
 	public static OffUserStorage getInstance(){
 		return INSTANCE;
 	}
